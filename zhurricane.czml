@@ -1,0 +1,51 @@
+[{
+    "id" : "document",
+    "name" : "CZML Point - Time Dynamic",
+    "version" : "1.0"
+}, {
+    "id" : "point",
+    "availability" :"2012-08-04T16:00:00Z/2012-08-06T04:00:00Z",
+    "position" : {
+        "epoch" : "2012-08-04T16:00:00Z",
+        "cartographicDegrees" : [
+            0,   -86, 25, 150000,
+            43200, -87, 28, 150000,
+            86400, -87.5, 31, 150000,
+            129600, -88, 34, 150000
+        ]
+    },
+    "point" : {
+        "color" : {
+            "rgba" : [255, 255, 255, 128]
+        },
+        "outlineColor" : {
+            "rgba" : [255, 0, 0, 128]
+        },
+        "outlineWidth" : 3,
+        "pixelSize" : 15
+    }
+},{
+    "id" : "shape1",
+    "name" : "Green circle at height",
+    "position" : {
+        "epoch" : "2012-08-04T16:00:00Z",
+        "cartographicDegrees" : [
+            0,   -86, 25, 150000,
+            43200, -87, 28, 150000,
+            86400, -87.5, 31, 150000,
+            129600, -88, 34, 150000
+        ]
+    },
+    "ellipse" : {
+        "semiMinorAxis" : 300000.0,
+        "semiMajorAxis" : 300000.0,
+        "height" : 200000.0,
+        "material" : {
+            "solidColor" : {
+                "color" : {
+                    "rgba" : [255, 255, 255, 64]
+                }
+            }
+        }
+    }
+}]
