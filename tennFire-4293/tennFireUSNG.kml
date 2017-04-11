@@ -1,0 +1,3209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="root_doc">
+	<name>tennFireUSNG.kml</name>
+	<Schema name="tennFireUSNG" id="tennFireUSNG">
+		<SimpleField type="string" name="timestamp"></SimpleField>
+		<SimpleField type="string" name="begin"></SimpleField>
+		<SimpleField type="string" name="end"></SimpleField>
+		<SimpleField type="string" name="altitudeMode"></SimpleField>
+		<SimpleField type="int" name="tessellate"></SimpleField>
+		<SimpleField type="int" name="extrude"></SimpleField>
+		<SimpleField type="int" name="visibility"></SimpleField>
+		<SimpleField type="int" name="drawOrder"></SimpleField>
+		<SimpleField type="string" name="icon"></SimpleField>
+		<SimpleField type="string" name="snippet"></SimpleField>
+	</Schema>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/police.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/police.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>tennFireUSNG</name>
+		<Placemark>
+			<name>DET 2 TRP F 1ST SQD 230 CAV RG</name>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>DET 2 TRP F 1ST SQD 230 CAV RG</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>Unit</td>
+
+<td>DET 2 TRP F 1ST SQD 230 CAV RG</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Capability1</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Capability2</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Capability3</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Address1</td>
+
+<td>2111 ARMY DR</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Address2</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>City</td>
+
+<td>LOUISVILLE</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>State</td>
+
+<td>TN</td>
+
+</tr>
+
+<tr>
+
+<td>Zipcode</td>
+
+<td>37777</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Zip_4</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>UIC</td>
+
+<td>V7PF2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>35.8217</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>-83.9939</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Personnel Authorized</td>
+
+<td>275</td>
+
+</tr>
+
+<tr>
+
+<td>Personnel Assigned</td>
+
+<td>236</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Personnel Available for SAD</td>
+
+<td>216</td>
+
+</tr>
+
+<tr>
+
+<td>High Water LMTV Assigned</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water LMTV Available</td>
+
+<td>6</td>
+
+</tr>
+
+<tr>
+
+<td>High Water LMTV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water MTV Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>High Water MTV Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water MTV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification LG Assigned</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification LG Available</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification LG Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification SM Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification SM Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification SM Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>High Water HMMV Assigned</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water HMMV Available</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>High Water HMMV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>3kw Generators Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>3kw Generators Available</td>
+
+<td>6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>3kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>5kw Generators Assigned</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>5kw Generators Available</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>5kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>10kw Generators Assigned</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>10kw Generators Available</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>10kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>15kw Generators Assigned</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>15kw Generators Available</td>
+
+<td>6</td>
+
+</tr>
+
+<tr>
+
+<td>15kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>20kw Generators Assigned</td>
+
+<td>9</td>
+
+</tr>
+
+<tr>
+
+<td>20kw Generators Available</td>
+
+<td>10</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>20kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>30kw Generators Assigned</td>
+
+<td>8</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>30kw Generators Available</td>
+
+<td>9</td>
+
+</tr>
+
+<tr>
+
+<td>30kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>60kw Generators Assigned</td>
+
+<td>10</td>
+
+</tr>
+
+<tr>
+
+<td>60kw Generators Available</td>
+
+<td>7</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>60kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Rotary Aircraft Assigned</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Rotary Aircraft Available</td>
+
+<td>10</td>
+
+</tr>
+
+<tr>
+
+<td>Rotary Aircraft Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CreationDate</td>
+
+<td>4/8/2014 4:58:15 PM</td>
+
+</tr>
+
+<tr>
+
+<td>Creator</td>
+
+<td>esri_domops</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>EditDate</td>
+
+<td>4/8/2014 4:58:15 PM</td>
+
+</tr>
+
+<tr>
+
+<td>Editor</td>
+
+<td>esri_domops</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#tennFireUSNG">
+					<SimpleData name="altitudeMode">clampToGround</SimpleData>
+					<SimpleData name="tessellate">-1</SimpleData>
+					<SimpleData name="extrude">0</SimpleData>
+					<SimpleData name="visibility">-1</SimpleData>
+					<SimpleData name="snippet"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-83.9939,35.8217,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>TRP L 3RD SQDN 278TH ACR</name>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>TRP L 3RD SQDN 278TH ACR</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>Unit</td>
+
+<td>TRP L 3RD SQDN 278TH ACR</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Capability1</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Capability2</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Capability3</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Address1</td>
+
+<td>1030 HAL HENARD RD</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Address2</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>City</td>
+
+<td>GREENEVILLE</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>State</td>
+
+<td>TN</td>
+
+</tr>
+
+<tr>
+
+<td>Zipcode</td>
+
+<td>37743</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Zip_4</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>UIC</td>
+
+<td>VEBC0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>36.1569</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>-82.88</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Personnel Authorized</td>
+
+<td>127</td>
+
+</tr>
+
+<tr>
+
+<td>Personnel Assigned</td>
+
+<td>117</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Personnel Available for SAD</td>
+
+<td>108</td>
+
+</tr>
+
+<tr>
+
+<td>High Water LMTV Assigned</td>
+
+<td>6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water LMTV Available</td>
+
+<td>7</td>
+
+</tr>
+
+<tr>
+
+<td>High Water LMTV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water MTV Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>High Water MTV Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water MTV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification LG Assigned</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification LG Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification LG Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification SM Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification SM Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification SM Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>High Water HMMV Assigned</td>
+
+<td>6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water HMMV Available</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>High Water HMMV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>3kw Generators Assigned</td>
+
+<td>4</td>
+
+</tr>
+
+<tr>
+
+<td>3kw Generators Available</td>
+
+<td>10</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>3kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>5kw Generators Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>5kw Generators Available</td>
+
+<td>6</td>
+
+</tr>
+
+<tr>
+
+<td>5kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>10kw Generators Assigned</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>10kw Generators Available</td>
+
+<td>7</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>10kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>15kw Generators Assigned</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>15kw Generators Available</td>
+
+<td>7</td>
+
+</tr>
+
+<tr>
+
+<td>15kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>20kw Generators Assigned</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>20kw Generators Available</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>20kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>30kw Generators Assigned</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>30kw Generators Available</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>30kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>60kw Generators Assigned</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>60kw Generators Available</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>60kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Rotary Aircraft Assigned</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Rotary Aircraft Available</td>
+
+<td>4</td>
+
+</tr>
+
+<tr>
+
+<td>Rotary Aircraft Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CreationDate</td>
+
+<td>4/8/2014 4:58:15 PM</td>
+
+</tr>
+
+<tr>
+
+<td>Creator</td>
+
+<td>esri_domops</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>EditDate</td>
+
+<td>4/8/2014 4:58:15 PM</td>
+
+</tr>
+
+<tr>
+
+<td>Editor</td>
+
+<td>esri_domops</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#tennFireUSNG">
+					<SimpleData name="altitudeMode">clampToGround</SimpleData>
+					<SimpleData name="tessellate">-1</SimpleData>
+					<SimpleData name="extrude">0</SimpleData>
+					<SimpleData name="visibility">-1</SimpleData>
+					<SimpleData name="snippet"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-82.88,36.1569,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>TRP I 3RD SQDN 278TH ACR REAR</name>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>TRP I 3RD SQDN 278TH ACR REAR</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>Unit</td>
+
+<td>TRP I 3RD SQDN 278TH ACR REAR</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Capability1</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Capability2</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Capability3</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Address1</td>
+
+<td>US HWY 68 PO BOX 308</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Address2</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>City</td>
+
+<td>SWEETWATER</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>State</td>
+
+<td>TN</td>
+
+</tr>
+
+<tr>
+
+<td>Zipcode</td>
+
+<td>37874</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Zip_4</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>UIC</td>
+
+<td>VEBAD</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>35.5949</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>-84.4542</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Personnel Authorized</td>
+
+<td>155</td>
+
+</tr>
+
+<tr>
+
+<td>Personnel Assigned</td>
+
+<td>125</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Personnel Available for SAD</td>
+
+<td>115</td>
+
+</tr>
+
+<tr>
+
+<td>High Water LMTV Assigned</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water LMTV Available</td>
+
+<td>8</td>
+
+</tr>
+
+<tr>
+
+<td>High Water LMTV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water MTV Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>High Water MTV Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water MTV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification LG Assigned</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification LG Available</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification LG Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification SM Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification SM Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification SM Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>High Water HMMV Assigned</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water HMMV Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>High Water HMMV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>3kw Generators Assigned</td>
+
+<td>4</td>
+
+</tr>
+
+<tr>
+
+<td>3kw Generators Available</td>
+
+<td>8</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>3kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>5kw Generators Assigned</td>
+
+<td>6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>5kw Generators Available</td>
+
+<td>4</td>
+
+</tr>
+
+<tr>
+
+<td>5kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>10kw Generators Assigned</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>10kw Generators Available</td>
+
+<td>7</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>10kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>15kw Generators Assigned</td>
+
+<td>7</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>15kw Generators Available</td>
+
+<td>4</td>
+
+</tr>
+
+<tr>
+
+<td>15kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>20kw Generators Assigned</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>20kw Generators Available</td>
+
+<td>10</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>20kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>30kw Generators Assigned</td>
+
+<td>8</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>30kw Generators Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>30kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>60kw Generators Assigned</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>60kw Generators Available</td>
+
+<td>8</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>60kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Rotary Aircraft Assigned</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Rotary Aircraft Available</td>
+
+<td>6</td>
+
+</tr>
+
+<tr>
+
+<td>Rotary Aircraft Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CreationDate</td>
+
+<td>4/8/2014 4:58:15 PM</td>
+
+</tr>
+
+<tr>
+
+<td>Creator</td>
+
+<td>esri_domops</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>EditDate</td>
+
+<td>4/8/2014 4:58:15 PM</td>
+
+</tr>
+
+<tr>
+
+<td>Editor</td>
+
+<td>esri_domops</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#tennFireUSNG">
+					<SimpleData name="altitudeMode">clampToGround</SimpleData>
+					<SimpleData name="tessellate">-1</SimpleData>
+					<SimpleData name="extrude">0</SimpleData>
+					<SimpleData name="visibility">-1</SimpleData>
+					<SimpleData name="snippet"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-84.4542,35.5949,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>DET 1 TRP A FA SQDN 278 ACR</name>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>DET 1 TRP A FA SQDN 278 ACR</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>Unit</td>
+
+<td>DET 1 TRP A FA SQDN 278 ACR</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Capability1</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Capability2</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Capability3</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Address1</td>
+
+<td>1856 RIDGE ROAD</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Address2</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>City</td>
+
+<td>PIGEON FORGE</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>State</td>
+
+<td>TN</td>
+
+</tr>
+
+<tr>
+
+<td>Zipcode</td>
+
+<td>37863</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Zip_4</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>UIC</td>
+
+<td>PBLA1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>35.8169</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>-83.5533</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Personnel Authorized</td>
+
+<td>202</td>
+
+</tr>
+
+<tr>
+
+<td>Personnel Assigned</td>
+
+<td>199</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Personnel Available for SAD</td>
+
+<td>166</td>
+
+</tr>
+
+<tr>
+
+<td>High Water LMTV Assigned</td>
+
+<td>7</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water LMTV Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>High Water LMTV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water MTV Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>High Water MTV Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water MTV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification LG Assigned</td>
+
+<td>6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification LG Available</td>
+
+<td>8</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification LG Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification SM Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification SM Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification SM Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>High Water HMMV Assigned</td>
+
+<td>3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water HMMV Available</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>High Water HMMV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>3kw Generators Assigned</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>3kw Generators Available</td>
+
+<td>8</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>3kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>5kw Generators Assigned</td>
+
+<td>8</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>5kw Generators Available</td>
+
+<td>9</td>
+
+</tr>
+
+<tr>
+
+<td>5kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>10kw Generators Assigned</td>
+
+<td>8</td>
+
+</tr>
+
+<tr>
+
+<td>10kw Generators Available</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>10kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>15kw Generators Assigned</td>
+
+<td>8</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>15kw Generators Available</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>15kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>20kw Generators Assigned</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>20kw Generators Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>20kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>30kw Generators Assigned</td>
+
+<td>6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>30kw Generators Available</td>
+
+<td>7</td>
+
+</tr>
+
+<tr>
+
+<td>30kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>60kw Generators Assigned</td>
+
+<td>9</td>
+
+</tr>
+
+<tr>
+
+<td>60kw Generators Available</td>
+
+<td>7</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>60kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Rotary Aircraft Assigned</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Rotary Aircraft Available</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>Rotary Aircraft Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CreationDate</td>
+
+<td>4/8/2014 4:58:15 PM</td>
+
+</tr>
+
+<tr>
+
+<td>Creator</td>
+
+<td>esri_domops</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>EditDate</td>
+
+<td>4/8/2014 4:58:15 PM</td>
+
+</tr>
+
+<tr>
+
+<td>Editor</td>
+
+<td>esri_domops</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#tennFireUSNG">
+					<SimpleData name="altitudeMode">clampToGround</SimpleData>
+					<SimpleData name="tessellate">-1</SimpleData>
+					<SimpleData name="extrude">0</SimpleData>
+					<SimpleData name="visibility">-1</SimpleData>
+					<SimpleData name="snippet"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-83.55329999999999,35.8169,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>253RD MP CO (-) (CS)</name>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>253RD MP CO (-) (CS)</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>Unit</td>
+
+<td>253RD MP CO (-) (CS)</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Capability1</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Capability2</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Capability3</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Address1</td>
+
+<td>2325 OLD HWY 95</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Address2</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>City</td>
+
+<td>LENOIR CITY</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>State</td>
+
+<td>TN</td>
+
+</tr>
+
+<tr>
+
+<td>Zipcode</td>
+
+<td>37771</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Zip_4</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>UIC</td>
+
+<td>X88AA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>35.7738</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>-84.2322</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Personnel Authorized</td>
+
+<td>243</td>
+
+</tr>
+
+<tr>
+
+<td>Personnel Assigned</td>
+
+<td>281</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Personnel Available for SAD</td>
+
+<td>250</td>
+
+</tr>
+
+<tr>
+
+<td>High Water LMTV Assigned</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water LMTV Available</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>High Water LMTV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water MTV Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>High Water MTV Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water MTV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification LG Assigned</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification LG Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification LG Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification SM Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification SM Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification SM Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>High Water HMMV Assigned</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water HMMV Available</td>
+
+<td>8</td>
+
+</tr>
+
+<tr>
+
+<td>High Water HMMV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>3kw Generators Assigned</td>
+
+<td>8</td>
+
+</tr>
+
+<tr>
+
+<td>3kw Generators Available</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>3kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>5kw Generators Assigned</td>
+
+<td>8</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>5kw Generators Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>5kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>10kw Generators Assigned</td>
+
+<td>4</td>
+
+</tr>
+
+<tr>
+
+<td>10kw Generators Available</td>
+
+<td>7</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>10kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>15kw Generators Assigned</td>
+
+<td>8</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>15kw Generators Available</td>
+
+<td>4</td>
+
+</tr>
+
+<tr>
+
+<td>15kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>20kw Generators Assigned</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>20kw Generators Available</td>
+
+<td>7</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>20kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>30kw Generators Assigned</td>
+
+<td>6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>30kw Generators Available</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>30kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>60kw Generators Assigned</td>
+
+<td>10</td>
+
+</tr>
+
+<tr>
+
+<td>60kw Generators Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>60kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Rotary Aircraft Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Rotary Aircraft Available</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>Rotary Aircraft Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CreationDate</td>
+
+<td>4/8/2014 4:58:15 PM</td>
+
+</tr>
+
+<tr>
+
+<td>Creator</td>
+
+<td>esri_domops</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>EditDate</td>
+
+<td>4/8/2014 4:58:15 PM</td>
+
+</tr>
+
+<tr>
+
+<td>Editor</td>
+
+<td>esri_domops</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#tennFireUSNG">
+					<SimpleData name="altitudeMode">clampToGround</SimpleData>
+					<SimpleData name="tessellate">-1</SimpleData>
+					<SimpleData name="extrude">0</SimpleData>
+					<SimpleData name="visibility">-1</SimpleData>
+					<SimpleData name="snippet"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-84.23220000000001,35.7738,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>DET 1 TRP A SPT SQDN 278TH ACR</name>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>DET 1 TRP A SPT SQDN 278TH ACR</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>Unit</td>
+
+<td>DET 1 TRP A SPT SQDN 278TH ACR</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Capability1</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Capability2</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Capability3</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Address1</td>
+
+<td>1409 TAZEWELL RD, P O BOX 488</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Address2</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>City</td>
+
+<td>NEW TAZEWELL</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>State</td>
+
+<td>TN</td>
+
+</tr>
+
+<tr>
+
+<td>Zipcode</td>
+
+<td>37825</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Zip_4</td>
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>UIC</td>
+
+<td>TQ0A1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Latitude</td>
+
+<td>36.4119</td>
+
+</tr>
+
+<tr>
+
+<td>Longitude</td>
+
+<td>-83.6809</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Personnel Authorized</td>
+
+<td>124</td>
+
+</tr>
+
+<tr>
+
+<td>Personnel Assigned</td>
+
+<td>138</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Personnel Available for SAD</td>
+
+<td>129</td>
+
+</tr>
+
+<tr>
+
+<td>High Water LMTV Assigned</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water LMTV Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>High Water LMTV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water MTV Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>High Water MTV Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water MTV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification LG Assigned</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification LG Available</td>
+
+<td>8</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification LG Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification SM Assigned</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>Water Purification SM Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Water Purification SM Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>High Water HMMV Assigned</td>
+
+<td>4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>High Water HMMV Available</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>High Water HMMV Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>3kw Generators Assigned</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>3kw Generators Available</td>
+
+<td>6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>3kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>5kw Generators Assigned</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>5kw Generators Available</td>
+
+<td>5</td>
+
+</tr>
+
+<tr>
+
+<td>5kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>10kw Generators Assigned</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>10kw Generators Available</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>10kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>15kw Generators Assigned</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>15kw Generators Available</td>
+
+<td>9</td>
+
+</tr>
+
+<tr>
+
+<td>15kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>20kw Generators Assigned</td>
+
+<td>6</td>
+
+</tr>
+
+<tr>
+
+<td>20kw Generators Available</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>20kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>30kw Generators Assigned</td>
+
+<td>10</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>30kw Generators Available</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>30kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>60kw Generators Assigned</td>
+
+<td>7</td>
+
+</tr>
+
+<tr>
+
+<td>60kw Generators Available</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>60kw Generators Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr>
+
+<td>Rotary Aircraft Assigned</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Rotary Aircraft Available</td>
+
+<td>4</td>
+
+</tr>
+
+<tr>
+
+<td>Rotary Aircraft Deployed</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CreationDate</td>
+
+<td>4/8/2014 4:58:15 PM</td>
+
+</tr>
+
+<tr>
+
+<td>Creator</td>
+
+<td>esri_domops</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>EditDate</td>
+
+<td>4/8/2014 4:58:15 PM</td>
+
+</tr>
+
+<tr>
+
+<td>Editor</td>
+
+<td>esri_domops</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#tennFireUSNG">
+					<SimpleData name="altitudeMode">clampToGround</SimpleData>
+					<SimpleData name="tessellate">-1</SimpleData>
+					<SimpleData name="extrude">0</SimpleData>
+					<SimpleData name="visibility">-1</SimpleData>
+					<SimpleData name="snippet"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-83.68089999999999,36.4119,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
