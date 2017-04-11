@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="root_doc">
+	<name>tennFireHospital.kml</name>
+	<Schema name="tennFireHospital" id="tennFireHospital">
+		<SimpleField type="string" name="timestamp"></SimpleField>
+		<SimpleField type="string" name="begin"></SimpleField>
+		<SimpleField type="string" name="end"></SimpleField>
+		<SimpleField type="string" name="altitudeMode"></SimpleField>
+		<SimpleField type="int" name="tessellate"></SimpleField>
+		<SimpleField type="int" name="extrude"></SimpleField>
+		<SimpleField type="int" name="visibility"></SimpleField>
+		<SimpleField type="int" name="drawOrder"></SimpleField>
+		<SimpleField type="string" name="icon"></SimpleField>
+		<SimpleField type="string" name="snippet"></SimpleField>
+	</Schema>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/hospitals.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/hospitals.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Folder>
+		<name>tennFireHospital</name>
+		<Placemark>
+			<name>EAST TENNESSEE CHILDREN&apos;S HOSPITAL</name>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>EAST TENNESSEE CHILDREN'S HOSPITAL</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>ID</td>
+
+<td>0003737916</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NAME</td>
+
+<td>EAST TENNESSEE CHILDREN'S HOSPITAL</td>
+
+</tr>
+
+<tr>
+
+<td>ADDRESS</td>
+
+<td>2018 CLINCH AVENUE</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ADDRESS2</td>
+
+<td>NOT AVAILABLE</td>
+
+</tr>
+
+<tr>
+
+<td>CITY</td>
+
+<td>KNOXVILLE</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATE</td>
+
+<td>TN</td>
+
+</tr>
+
+<tr>
+
+<td>ZIP</td>
+
+<td>37916</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ZIP4</td>
+
+<td>NOT AVAILABLE</td>
+
+</tr>
+
+<tr>
+
+<td>TELEPHONE</td>
+
+<td>(865) 541-8000</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>TYPE</td>
+
+<td>CHILDREN</td>
+
+</tr>
+
+<tr>
+
+<td>STATUS</td>
+
+<td>OPEN</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>POPULATION</td>
+
+<td>152</td>
+
+</tr>
+
+<tr>
+
+<td>COUNTY</td>
+
+<td>KNOX</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>COUNTYFIPS</td>
+
+<td>47093</td>
+
+</tr>
+
+<tr>
+
+<td>COUNTRY</td>
+
+<td>USA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LATITUDE</td>
+
+<td>35.9563</td>
+
+</tr>
+
+<tr>
+
+<td>LONGITUDE</td>
+
+<td>-83.9377</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NAICS_CODE</td>
+
+<td>622110</td>
+
+</tr>
+
+<tr>
+
+<td>NAICS_DESC</td>
+
+<td>GENERAL MEDICAL AND SURGICAL HOSPITALS</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SOURCE</td>
+
+<td><a target="_blank" href="http://tnmap.state.tn.us/portal/metadata.asp">http://tnmap.state.tn.us/portal/metadata.asp</a></td>
+
+</tr>
+
+<tr>
+
+<td>SOURCEDATE</td>
+
+<td>6/11/2012</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>VAL_METHOD</td>
+
+<td>IMAGERY</td>
+
+</tr>
+
+<tr>
+
+<td>VAL_DATE</td>
+
+<td>2/10/2014</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>WEBSITE</td>
+
+<td><a target="_blank" href="http://www.etch.com">http://www.etch.com</a></td>
+
+</tr>
+
+<tr>
+
+<td>STATE_ID</td>
+
+<td>128285</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>ALT_NAME</td>
+
+<td>NOT AVAILABLE</td>
+
+</tr>
+
+<tr>
+
+<td>ST_FIPS</td>
+
+<td>47</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>OWNER</td>
+
+<td>NON-PROFIT</td>
+
+</tr>
+
+<tr>
+
+<td>TTL_STAFF</td>
+
+<td>-999</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>BEDS</td>
+
+<td>152</td>
+
+</tr>
+
+<tr>
+
+<td>TRAUMA</td>
+
+<td>NOT AVAILABLE</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>HELIPAD</td>
+
+<td>Y</td>
+
+</tr>
+
+<tr>
+
+<td>DATECREATE</td>
+
+<td>3/22/2013</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#tennFireHospital">
+					<SimpleData name="altitudeMode">clampToGround</SimpleData>
+					<SimpleData name="tessellate">-1</SimpleData>
+					<SimpleData name="extrude">0</SimpleData>
+					<SimpleData name="visibility">-1</SimpleData>
+					<SimpleData name="snippet"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-83.9376747772691,35.9562881660662,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
