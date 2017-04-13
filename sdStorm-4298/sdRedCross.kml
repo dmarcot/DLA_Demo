@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="root_doc">
+	<name>sdRedCross.kml</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<color>ffecf1ef</color>
+			<scale>0.2</scale>
+			<Icon>
+				<href>/Users/ahmedmian/Downloads/download (2).png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<color>ffecf1ef</color>
+			<scale>0.236364</scale>
+			<Icon>
+				<href>/Users/ahmedmian/Downloads/download (2).png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>sdRedCross</name>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<coordinates>-97.1144798357706,44.0053626531807,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<coordinates>-100.354002770531,44.3660374558984,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<coordinates>-98.0244938442824,43.7108908040131,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<coordinates>-98.465149605365,45.45409130228741,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<coordinates>-96.8013911090809,44.3093865192157,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<coordinates>-103.212102171795,44.0969971391792,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<coordinates>-96.74629702709549,43.5572907517994,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
