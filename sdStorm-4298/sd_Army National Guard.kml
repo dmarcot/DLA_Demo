@@ -2,20 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document id="root_doc">
 	<name>sd_Army National Guard.kml</name>
-	<Style id="s_ylw-pushpin_hl">
-		<IconStyle>
-			<color>ff00ff00</color>
-			<scale>0.354545</scale>
-			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
-			</Icon>
-		</IconStyle>
-		<LabelStyle>
-			<color>00ffffff</color>
-		</LabelStyle>
-		<ListStyle>
-		</ListStyle>
-	</Style>
 	<StyleMap id="m_ylw-pushpin">
 		<Pair>
 			<key>normal</key>
@@ -37,8 +23,18 @@
 		<LabelStyle>
 			<color>00ffffff</color>
 		</LabelStyle>
-		<ListStyle>
-		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>0.354545</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/shaded_dot.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>00ffffff</color>
+		</LabelStyle>
 	</Style>
 	<Folder>
 		<name>sd_Army_National_Guard</name>

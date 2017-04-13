@@ -29,7 +29,7 @@ function startup(Cesium) {
     'use strict';
 //Sandcastle_Begin
 var viewer = new Cesium.Viewer('cesiumContainer');
-viewer.dataSources.add(Cesium.CzmlDataSource.load('zfire.czml'));
+viewer.dataSources.add(Cesium.CzmlDataSource.load('zhurricane.cmzl'));
 
 var options = {
     camera : viewer.scene.camera,
@@ -37,22 +37,18 @@ var options = {
 };
 
 Sandcastle.addToolbarMenu([{
-    text : 'KML - Global Science Facilities',
+    text : 'DR-4293 - Tennessee Fire',
     onselect : function() {
         viewer.camera.flyHome(0);
-        viewer.dataSources.add(Cesium.KmlDataSource.load('../../SampleData/kml/facilities/facilities.kml', options));
+        viewer.dataSources.add(Cesium.KmlDataSource.load('tennFireCSVs.kml', options));
+        viewer.dataSources.add(Cesium.KmlDataSource.load('tennFireF&RVs.kml', options));
+        viewer.dataSources.add(Cesium.KmlDataSource.load('tennFireHospital.kml', options));
+        viewer.dataSources.add(Cesium.KmlDataSource.load('tennFireUSNG.kml', options));
     }
 }, {
-    text : 'KMZ with embedded data - GDP per capita',
+    text : 'DR-4280 - Florida Hurricane',
     onselect : function() {
         viewer.camera.flyHome(0);
-        viewer.dataSources.add(Cesium.KmlDataSource.load('../../SampleData/kml/gdpPerCapita2008.kmz', options));
-    }
-}, {
-    text : 'DR-4280',
-    onselect : function() {
-        viewer.camera.flyHome(0);
-   
         viewer.dataSources.add(Cesium.KmlDataSource.load('DR4280.kml', options));
         viewer.dataSources.add(Cesium.KmlDataSource.load('Florida Hospitals.kml', options));
         viewer.dataSources.add(Cesium.KmlDataSource.load('Food and Retail Vendors Florida.kml', options));
@@ -61,19 +57,15 @@ Sandcastle.addToolbarMenu([{
         viewer.dataSources.add(Cesium.KmlDataSource.load('Supply Vendors Florida.kml', options));
       }
 }, {
-    text : 'gx KML extensions - Bike Ride',
+    text : 'DR-4298 - South Dakota Severe Winter Storm',
     onselect : function() {
-        viewer.dataSources.add(Cesium.KmlDataSource.load('../../SampleData/kml/bikeRide.kml', options)).then(function(dataSource){
-            viewer.clock.shouldAnimate = false;
-            var rider = dataSource.entities.getById('tour');
-            viewer.flyTo(rider).then(function(){
-                viewer.trackedEntity = rider;
-                viewer.selectedEntity = viewer.trackedEntity;
-                viewer.clock.multiplier = 30;
-                viewer.clock.shouldAnimate = true;
-            });
-
-        });
+        viewer.camera.flyHome(0);
+        viewer.dataSources.add(Cesium.KmlDataSource.load('DR4298.kml', options));
+        viewer.dataSources.add(Cesium.KmlDataSource.load('sd_Army National Guard.kml', options));
+        viewer.dataSources.add(Cesium.KmlDataSource.load('sd_Construction Supply Vendors.kml', options));
+        viewer.dataSources.add(Cesium.KmlDataSource.load('sd_Food and Retail Vendors.kml', options));
+        viewer.dataSources.add(Cesium.KmlDataSource.load('sd_hospitals.kml', options));
+        viewer.dataSources.add(Cesium.KmlDataSource.load('sd_RedCross.kml', options));
     }
 }], 'toolbar');
 

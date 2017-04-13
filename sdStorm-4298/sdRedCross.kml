@@ -14,9 +14,17 @@
 		<LabelStyle>
 			<color>00ffffff</color>
 		</LabelStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
 	<Style id="s_ylw-pushpin_hl">
 		<IconStyle>
 			<color>ffecf1ef</color>
@@ -29,19 +37,7 @@
 		<LabelStyle>
 			<color>00ffffff</color>
 		</LabelStyle>
-		<ListStyle>
-		</ListStyle>
 	</Style>
-	<StyleMap id="m_ylw-pushpin">
-		<Pair>
-			<key>normal</key>
-			<styleUrl>#s_ylw-pushpin</styleUrl>
-		</Pair>
-		<Pair>
-			<key>highlight</key>
-			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
-		</Pair>
-	</StyleMap>
 	<Folder>
 		<name>sdRedCross</name>
 		<Placemark>
