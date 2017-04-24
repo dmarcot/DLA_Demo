@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Use correct character set. -->
+  <meta charset="utf-8">
+  <!-- Tell IE to use the latest, best version. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>Tennessee Wild Fire DR-4293</title>
+  <script src="../../../Build/Cesium/Cesium.js"></script>
+  <style>
+      @import url(../../../Build/Cesium/Widgets/widgets.css);
+      html, body, #cesiumContainer {
+          width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+      }
+
+  </style>
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+  <script>
+	var viewer = new Cesium.Viewer('cesiumContainer', {
+		orderIndependentTranslucency: false
+	});
+	
+	var options = {
+		camera : viewer.scene.camera,
+		canvas : viewer.scene.canvas
+	};
+
+	<!-- Import Cesium File -->
+	viewer.dataSources.add(Cesium.CzmlDataSource.load('floHurr-4280/floHurr.czml'));
+	
+	<!-- start on specific location , fromDegress(west,south,east,north) -->
+	viewer.camera.setView({
+		destination: Cesium.Rectangle.fromDegrees(-85, 25, -80.0, 34.0)
+	});
+	
+	<!-- USNG Layer -->
+	viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/National Guard Florida.kml',options));
+	
+	<!-- Hospitals Layer -->
+	viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/Florida Hospitals.kml',options));
+	
+	<!-- Construction Supply Vendors Layer -->
+	viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/Supply Vendors Florida.kml',options));
+	
+	<!-- Food & Retail Vendors Layer -->
+	viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/Food and Retail Vendors Florida.kml',options));
+	
+	<!-- DR4280 Layer -->
+	viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/DR4280.kml',options));
+	
+  </script>
+</body>
+</html>
