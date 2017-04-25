@@ -94,7 +94,7 @@ function startup(Cesium) {
 		viewer.dataSources.add(Cesium.CzmlDataSource.load('tennFire.czml'));
 	});
 	
-	//Clears all layers
+	//Clears all layers except Disaster Area Layer
 	Sandcastle.addToolbarButton('Clear all', function(){
 		viewer.dataSources.removeAll();
 		entities.show = !entities.show;
