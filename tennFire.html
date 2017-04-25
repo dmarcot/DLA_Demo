@@ -44,13 +44,12 @@ function startup(Cesium) {
 	
 	//Disaster Area Layer
 	viewer.dataSources.add(Cesium.KmlDataSource.load('tennFire/tennFireDA.kml',options));
-	
-	<!-- start on specific location , fromDegress(west,south,east,north) -->
+	//start on specific location , fromDegress(west,south,east,north)
 	viewer.camera.setView({
 		destination: Cesium.Rectangle.fromDegrees(-85, 34.5, -82.0, 37.0)
 	});
 
-	<!-- Disaster Recovery Center Pin -->
+	//Disaster Recovery Center Pin
 	var pinBuilder = new Cesium.PinBuilder();
 	var entities = viewer.entities;
 	var url = Cesium.buildModuleUrl('Assets/Textures/maki/star.png');
