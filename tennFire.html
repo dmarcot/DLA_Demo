@@ -34,10 +34,14 @@ function startup(Cesium) {
 	baseLayerPicker : false
 	});
 	
+	
+	
 	var options = {
 		camera : viewer.scene.camera,
 		canvas : viewer.scene.canvas
 	};
+	
+	//var usng = new Cesium.KmlDataSource.load('tennFire/tennFireUSNG.kml',options);
 
 	//Import Cesium File
 	viewer.dataSources.add(Cesium.CzmlDataSource.load('tennFire.czml'));
@@ -65,6 +69,19 @@ function startup(Cesium) {
 		});
 	});
 	
+	var usng = new Cesium.KmlDataSource(options);
+	usng.load('tennFire/tennFireUSNG.kml');
+	
+	var csv = new Cesium.KmlDataSource(options);
+	csv.load('tennFire/tennFireCSVs.kml');
+	
+	var hosp = new Cesium.KmlDataSource(options);
+	hosp.load('tennFire/tennFireHospital.kml');
+	
+	var frv = new Cesium.KmlDataSource(options);
+	frv.load('tennFire/tennFireF&RVs.kml');
+	
+	
 	//Disaster Recovery Center Layer
 	Sandcastle.addToolbarButton('Disaster Recovery Center', function(){
 		entities.show = !entities.show;
@@ -72,22 +89,26 @@ function startup(Cesium) {
 	
 	//USNG Layer	
 	Sandcastle.addToolbarButton('United States National Guard', function(){
-		viewer.dataSources.add(Cesium.KmlDataSource.load('tennFire/tennFireUSNG.kml',options));
+		if(viewer.dataSources.contains(usng)) usng.show = !usng.show;
+		else viewer.dataSources.add(usng);
 	});
 	
 	//Construction Supply Vendors Layer	
 	Sandcastle.addToolbarButton('Construction Supply Vendors', function(){
-		viewer.dataSources.add(Cesium.KmlDataSource.load('tennFire/tennFireCSVs.kml',options));
+		if(viewer.dataSources.contains(csv)) csv.show = !csv.show;
+		else viewer.dataSources.add(csv);
 	});
 	
 	//Hospital Layer	
 	Sandcastle.addToolbarButton('Hospitals', function(){
-		viewer.dataSources.add(Cesium.KmlDataSource.load('tennFire/tennFireHospital.kml',options));
+		if(viewer.dataSources.contains(hosp)) hosp.show = !hosp.show;
+		else viewer.dataSources.add(hosp);
 	});
 	
 	//Food and Retail Vendors Layer	
 	Sandcastle.addToolbarButton('Food and Retail Vendors', function(){
-		viewer.dataSources.add(Cesium.KmlDataSource.load('tennFire/tennFireF&RVs.kml',options));
+		if(viewer.dataSources.contains(frv)) frv.show = !frv.show;
+		else viewer.dataSources.add(frv);
 	});
 	
 	//CZML Fire Polygon Layer	
