@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Use correct character set. -->
-  <meta charset="utf-8">
-  <!-- Tell IE to use the latest, best version. -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-  <title>Tennessee Wild Fire DR-4293</title>
-  <script src="../../../Build/Cesium/Cesium.js"></script>
-  <style>
-      @import url(../../../Build/Cesium/Widgets/widgets.css);
-      html, body, #cesiumContainer {
-          width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
-      }
-
-  </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="Show or hide groups of entities.">
+    <meta name="cesium-sandcastle-labels" content="Beginner">
+    <title>DR-4293 Tennessee Fire</title>
+    <script type="text/javascript" src="Sandcastle/Sandcastle-header.js"></script>
+    <script type="text/javascript" src="../ThirdParty/requirejs-2.1.20/require.js"></script>
+    <script type="text/javascript">
+    require.config({
+        baseUrl : '../Source',
+        waitSeconds : 60
+    });
+    </script>
 </head>
-<body>
-  <div id="cesiumContainer"></div>
-  <script>
+<body class="sandcastle-loading" data-sandcastle-bucket="Sandcastle/bucket-requirejs.html">
+<style>
+    @import url(Sandcastle/templates/bucket.css);
+</style>
+<div id="cesiumContainer" class="fullSize"></div>
+<div id="loadingOverlay"><h1>Loading...</h1></div>
+<div id="toolbar"></div>
+<script id="cesium_sandcastle_script">
+function startup(Cesium) {
+    'use strict';
+//Sandcastle_Begin
 	var viewer = new Cesium.Viewer('cesiumContainer', {
-		orderIndependentTranslucency: false
+    imageryProvider : new Cesium.ArcGisMapServerImageryProvider({
+        url : 'http://server.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer'
+		}),
+	baseLayerPicker : false
 	});
 	
 	var options = {
@@ -29,29 +39,95 @@
 		canvas : viewer.scene.canvas
 	};
 
-	<!-- Import Cesium File -->
-	viewer.dataSources.add(Cesium.CzmlDataSource.load('floHurr-4280/floHurr.czml'));
+	//Import Cesium File
+	viewer.dataSources.add(Cesium.CzmlDataSource.load('floHurr.czml'));
 	
-	<!-- start on specific location , fromDegress(west,south,east,north) -->
-	viewer.camera.setView({
-		destination: Cesium.Rectangle.fromDegrees(-85, 25, -80.0, 34.0)
-	});
-	
-	<!-- USNG Layer -->
-	viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/National Guard Florida.kml',options));
-	
-	<!-- Hospitals Layer -->
-	viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/Florida Hospitals.kml',options));
-	
-	<!-- Construction Supply Vendors Layer -->
-	viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/Supply Vendors Florida.kml',options));
-	
-	<!-- Food & Retail Vendors Layer -->
-	viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/Food and Retail Vendors Florida.kml',options));
-	
-	<!-- DR4280 Layer -->
+	//Disaster Area Layer
 	viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/DR4280.kml',options));
 	
-  </script>
+	//start on specific location , fromDegress(west,south,east,north)
+	viewer.camera.setView({
+		destination: Cesium.Rectangle.fromDegrees(-85, 25, -80, 34.0)
+	});
+
+	//Disaster Recovery Center Pin
+	var pinBuilder = new Cesium.PinBuilder();
+	var entities = viewer.entities;
+	var url = Cesium.buildModuleUrl('Assets/Textures/maki/star.png');
+	var drcPin = Cesium.when(pinBuilder.fromUrl(url, Cesium.Color.YELLOW, 48), function(canvas) {
+    return viewer.entities.add({
+        name : 'DR-4293 Disaster Recovery Center',
+		description: 'SBA Business Recovery Center/Disaster Loan Outreach Center Citizens National Bank Building (Former United Way Office) 906 East Parkway Gatlinburg, TN 37738 Hours  Monday - Friday: 8 a.m. to 4 p.m. Saturdays and Sundays: Closed',
+        position : Cesium.Cartesian3.fromDegrees(-83.494511, 35.723332),
+        billboard : {
+            image : canvas.toDataURL(),
+			}
+		});
+	});
+	
+	//Disaster Recovery Center Layer
+	Sandcastle.addToolbarButton('Disaster Recovery Center', function(){
+		entities.show = !entities.show;
+	});
+	
+	//USNG Layer	
+	Sandcastle.addToolbarButton('United States National Guard', function(){
+		viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/National Guard Florida.kml',options));
+	});
+	
+	//Construction Supply Vendors Layer	
+	Sandcastle.addToolbarButton('Construction Supply Vendors', function(){
+		viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/Supply Vendors Florida.kml',options));
+	});
+	
+	//Hospital Layer	
+	Sandcastle.addToolbarButton('Hospitals', function(){
+		viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/Florida Hospitals.kml',options));
+	});
+	
+	//Food and Retail Vendors Layer	
+	Sandcastle.addToolbarButton('Food and Retail Vendors', function(){
+		viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/Food and Retail Vendors Florida.kml',options));
+	});
+	
+	//CZML Fire Polygon Layer	
+	Sandcastle.addToolbarButton('Fire Trail', function(){
+		viewer.dataSources.add(Cesium.CzmlDataSource.load('floHurr.czml'));
+	});
+	
+	//Clears all layers except DA
+	Sandcastle.addToolbarButton('Clear all', function(){
+		viewer.dataSources.removeAll();
+        if(entities.show) entities.show = !entities.show;
+		viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/DR4280.kml',options));
+	});
+	
+	//Shows all layers
+	Sandcastle.addToolbarButton('Show all', function(){
+		viewer.dataSources.add(Cesium.CzmlDataSource.load('floHurr.czml'));
+		viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/Food and Retail Vendors Florida.kml',options));
+		viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/Florida Hospitals.kml',options));
+		viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/Supply Vendors Florida.kml',options));
+		viewer.dataSources.add(Cesium.KmlDataSource.load('floHurr-4280/National Guard Florida.kml',options));
+		if(!entities.show) entities.show = !entities.show;
+	});
+	
+	//changes view back to where it started
+	Sandcastle.addToolbarButton('Reset View', function(){
+		viewer.camera.setView({
+		destination: Cesium.Rectangle.fromDegrees(-85, 34.5, -82.0, 37.0)
+	});
+	});
+	
+	
+	//Sandcastle_End
+		Sandcastle.finishedLoading();
+	}
+	if (typeof Cesium !== "undefined") {
+		startup(Cesium);
+	} else if (typeof require === "function") {
+		require(["Cesium"], startup);
+	}
+</script>
 </body>
 </html>
