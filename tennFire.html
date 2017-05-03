@@ -44,6 +44,7 @@ function startup(Cesium) {
 	
 	//Disaster Area Layer
 	viewer.dataSources.add(Cesium.KmlDataSource.load('tennFire/tennFireDA.kml',options));
+	
 	//start on specific location , fromDegress(west,south,east,north)
 	viewer.camera.setView({
 		destination: Cesium.Rectangle.fromDegrees(-85, 34.5, -82.0, 37.0)
@@ -94,12 +95,30 @@ function startup(Cesium) {
 		viewer.dataSources.add(Cesium.CzmlDataSource.load('tennFire.czml'));
 	});
 	
-	//Clears all layers except Disaster Area Layer
+	//Clears all layers except DA
 	Sandcastle.addToolbarButton('Clear all', function(){
 		viewer.dataSources.removeAll();
-		entities.show = !entities.show;
+        if(entities.show) entities.show = !entities.show;
 		viewer.dataSources.add(Cesium.KmlDataSource.load('tennFire/tennFireDA.kml',options));
 	});
+	
+	//Shows all layers
+	Sandcastle.addToolbarButton('Show all', function(){
+		viewer.dataSources.add(Cesium.CzmlDataSource.load('tennFire.czml'));
+		viewer.dataSources.add(Cesium.KmlDataSource.load('tennFire/tennFireF&RVs.kml',options));
+		viewer.dataSources.add(Cesium.KmlDataSource.load('tennFire/tennFireHospital.kml',options));
+		viewer.dataSources.add(Cesium.KmlDataSource.load('tennFire/tennFireCSVs.kml',options));
+		viewer.dataSources.add(Cesium.KmlDataSource.load('tennFire/tennFireUSNG.kml',options));
+		if(!entities.show) entities.show = !entities.show;
+	});
+	
+	//changes view back to where it started
+	Sandcastle.addToolbarButton('Reset View', function(){
+		viewer.camera.setView({
+		destination: Cesium.Rectangle.fromDegrees(-85, 34.5, -82.0, 37.0)
+	});
+	});
+	
 	
 	//Sandcastle_End
 		Sandcastle.finishedLoading();
